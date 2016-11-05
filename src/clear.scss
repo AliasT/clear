@@ -1,0 +1,50 @@
+.clear {
+  overflow: hidden;
+  white-space: nowrap;
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .clear-wrapper {
+    position: relative;
+
+    position: relative;
+
+    .inline-block {
+      display: inline-block;
+    }
+
+    .clear-content {
+      width: 100%;
+      transition: all .5s;
+    }
+
+    .clear-operations {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 100%;
+
+      transition: all .5s;
+      display: flex;    /* 关键点 */
+      align-items: center;
+
+      .operation-container {
+        transition: width .5s;
+
+        .operation {
+          padding: 10px;
+          background: #ccc;
+          text-align: center;
+          + .operation {
+            border-left: solid 1px;
+          }
+        }
+      }
+    }
+  }
+}
