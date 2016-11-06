@@ -26,7 +26,7 @@ export default class Clear extends React.Component {
 
     var isFolding = true
 
-    hammer.on('swipe', () => {
+    window.a = hammer.on('swipe', () => {
       const result = isFolding ? -operationsWidth : 0
       console.log(result)
       this.updateStyle(result)
