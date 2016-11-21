@@ -2,8 +2,18 @@ import Clear from "./src/clear"
 import React from "react"
 import ReactDom from "react-dom"
 
-
-
+// test style
+function getS (b) {
+  return {
+    width: '100%',
+    height: '100%',
+    padding: '0 15px',
+    display: 'flex',
+    alignItems: 'center',
+    background: b,
+    color: '#fff'
+  }
+}
 
 const content = (
   <div>
@@ -15,5 +25,9 @@ const content = (
 ReactDom.render(
   <Clear
     content={content}
-    operations={[<div>更多</div>, <div>分类</div>, <div>删除</div>]} />,
+    operations={[
+      <div style={getS('#0754e2')}>更多</div>,
+      <div style={getS('#e29507')}>分类</div>,
+      <div style={getS('#e2073a')}>删除</div>]}
+    />,
   document.getElementById('app'))

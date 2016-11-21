@@ -33,7 +33,6 @@
     "css-loader": "^0.23.1",
     "node-sass": "^3.8.0",
     "object-assign": "^4.1.0",
-    "react-dom": "^15.2.1",
     "react-loader": "^2.4.0",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
